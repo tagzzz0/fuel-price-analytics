@@ -57,7 +57,7 @@ fuel-price-analytics/
 ## Running it locally
 
 ```bash
-git clone <your-repo-url>
+git clone (https://github.com/tagzzz0/fuel-price-analytics.git)
 cd fuel-price-analytics
 pip install -r requirements.txt
 
