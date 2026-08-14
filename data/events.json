@@ -1,0 +1,112 @@
+[
+  {
+    "id": "brexit-vote-uncertainty-2019",
+    "start_date": "2019-01-01",
+    "end_date": "2019-12-31",
+    "category": "policy",
+    "title": "Brexit uncertainty & sterling weakness",
+    "summary": "Prolonged Brexit negotiations kept sterling volatile through 2019. Since UK pump prices are set in GBP but crude is traded in USD, a weaker pound raises the sterling cost of oil even when the dollar crude price is flat.",
+    "sources": []
+  },
+  {
+    "id": "covid-demand-collapse-2020",
+    "start_date": "2020-03-01",
+    "end_date": "2020-05-31",
+    "category": "pandemic",
+    "title": "COVID-19 demand collapse & negative WTI",
+    "summary": "Global lockdowns from March 2020 caused the sharpest demand collapse in oil market history. Storage capacity nearly ran out and WTI crude briefly traded at a negative price on 20 April 2020. UK pump prices fell to their lowest point in the dataset (petrol ~104.87p) in May 2020 as demand for road fuel evaporated.",
+    "sources": [
+      {"label": "IEA - Oil Market Report April 2020", "url": "https://www.iea.org/reports/oil-market-report-april-2020"},
+      {"label": "EIA - WTI negative pricing explainer", "url": "https://www.eia.gov/todayinenergy/detail.php?id=43495"}
+    ]
+  },
+  {
+    "id": "opec-price-war-2020",
+    "start_date": "2020-03-08",
+    "end_date": "2020-04-12",
+    "category": "opec",
+    "title": "Saudi-Russia price war",
+    "summary": "After OPEC+ talks collapsed in early March 2020, Saudi Arabia launched a price war and ramped up output just as COVID demand was collapsing, compounding the crash in crude prices.",
+    "sources": []
+  },
+  {
+    "id": "post-covid-recovery-2021",
+    "start_date": "2021-01-01",
+    "end_date": "2021-12-31",
+    "category": "trend",
+    "title": "Demand recovery & fuel duty freeze",
+    "summary": "As lockdowns eased through 2021, road fuel demand and crude prices climbed steadily back toward pre-pandemic levels. UK fuel duty remained frozen (as it had been since 2011), so the rise over 2021 tracks the underlying wholesale product cost rather than tax changes.",
+    "sources": []
+  },
+  {
+    "id": "russia-ukraine-invasion-2022",
+    "start_date": "2022-02-24",
+    "end_date": "2022-03-31",
+    "category": "geopolitical",
+    "title": "Russia's invasion of Ukraine",
+    "summary": "Russia's full-scale invasion of Ukraine on 24 February 2022 triggered fears of sanctions on one of the world's largest oil exporters. Brent crude spiked toward $130/bbl in early March, and UK petrol jumped from about 149p to over 159p in a single week (14 March 2022), one of the largest weekly rises in the dataset.",
+    "sources": [
+      {"label": "IEA - Oil Market Report March 2022", "url": "https://www.iea.org/reports/oil-market-report-march-2022"}
+    ]
+  },
+  {
+    "id": "uk-fuel-duty-cut-2022",
+    "start_date": "2022-03-23",
+    "end_date": "2022-03-23",
+    "category": "policy",
+    "title": "UK fuel duty cut by 5p/litre",
+    "summary": "In response to record pump prices, the UK Spring Statement 2022 cut fuel duty by 5 pence per litre from 23 March 2022, the largest cash-terms cut on record, which is visible as a step down in the duty columns of the dataset.",
+    "sources": []
+  },
+  {
+    "id": "record-uk-pump-prices-2022",
+    "start_date": "2022-06-01",
+    "end_date": "2022-07-15",
+    "category": "trend",
+    "title": "Record UK pump prices",
+    "summary": "Despite the duty cut, continued supply tightness and a weak pound pushed UK pump prices to record highs in the summer of 2022 - the dataset's all-time peak of 191.55p for petrol falls in this window (early July 2022).",
+    "sources": []
+  },
+  {
+    "id": "opec-plus-cuts-late-2022-2023",
+    "start_date": "2022-10-05",
+    "end_date": "2023-12-31",
+    "category": "opec",
+    "title": "OPEC+ production cuts",
+    "summary": "OPEC+ announced a series of output cuts from October 2022 through 2023 to support prices amid recession fears and falling demand growth, contributing to the choppier, lower-trending prices through late 2022 and 2023 relative to the summer 2022 peak.",
+    "sources": []
+  },
+  {
+    "id": "israel-hamas-war-2023",
+    "start_date": "2023-10-07",
+    "end_date": "2023-12-31",
+    "category": "geopolitical",
+    "title": "Israel-Hamas war & Middle East risk premium",
+    "summary": "The outbreak of the Israel-Hamas war in October 2023 raised concerns about wider Middle East instability and shipping risk, adding a geopolitical risk premium to crude prices through the final quarter of 2023.",
+    "sources": [
+      {"label": "IEA - Oil Market Report November 2023", "url": "https://www.iea.org/reports/oil-market-report-november-2023"}
+    ]
+  },
+  {
+    "id": "red-sea-shipping-crisis-2024",
+    "start_date": "2024-01-01",
+    "end_date": "2024-06-30",
+    "category": "geopolitical",
+    "title": "Red Sea shipping attacks",
+    "summary": "Houthi attacks on shipping in the Red Sea and Gulf of Aden through early-to-mid 2024 forced vessels onto longer routes around Africa, raising freight and insurance costs that fed through to fuel markets.",
+    "sources": []
+  },
+  {
+    "id": "iran-israel-us-war-2026",
+    "start_date": "2026-02-27",
+    "end_date": "2026-08-13",
+    "category": "geopolitical",
+    "title": "US-Israel-Iran war & Strait of Hormuz blockade",
+    "summary": "US and Israeli military operations against Iran began in late February 2026. Iran responded by attacking shipping and effectively closing the Strait of Hormuz, a chokepoint for roughly a fifth of global oil flow. Brent crude surged over 50% in March 2026 alone, one of the steepest monthly rallies on record, briefly nearing $120/bbl. Prices whipsawed through the following months on ceasefire talks, renewed strikes and reports of the US considering direct military action to reopen the Strait - each swing visible as sharp weekly moves in the dataset from March through August 2026.",
+    "sources": [
+      {"label": "CNBC - Timeline of how the Iran war shook oil prices", "url": "https://www.cnbc.com/2026/04/21/oil-price-iran-war-middle-east.html"},
+      {"label": "Al Jazeera - Oil surges as US strikes Iran", "url": "https://www.aljazeera.com/news/2026/7/8/oil-prices-surge-as-us-strikes-iran-reversing-fall-to-pre-war-levels"},
+      {"label": "Al Jazeera - Oil climbs as Hormuz outlook clouds", "url": "https://www.aljazeera.com/economy/2026/8/10/oil-prices-climb-as-iranian-demands-cloud-outlook-for-strait-of-hormuz"}
+    ]
+  }
+]

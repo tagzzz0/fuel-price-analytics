@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Fuel Price Analytics · 2018–2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+<script src="{{ url_for('static', filename='js/chart.umd.min.js') }}"></script>
+</head>
+<body>
+
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item">LOADING FEED…</span>
+    </div>
+  </div>
+
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">
+        <span class="eyebrow">Commodities · Retail Fuel</span>
+        <h1>UK Pump Price Analytics</h1>
+        <p class="brand-sub">Weekly ULSP / ULSD pump prices, duty &amp; VAT — gov.uk, Jan 2018 – Aug 2026</p>
+      </div>
+      <div class="fuel-toggle" role="tablist" aria-label="Select fuel">
+        <button class="fuel-btn active" data-fuel="petrol" role="tab" aria-selected="true">Petrol</button>
+        <button class="fuel-btn" data-fuel="diesel" role="tab" aria-selected="false">Diesel</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+
+    <section class="stat-row" id="statRow" aria-label="Key statistics"></section>
+
+    <section class="timeline-nav" aria-label="Year navigation">
+      <button class="year-btn active" data-year="all">All</button>
+      <button class="year-btn" data-year="2018">2018</button>
+      <button class="year-btn" data-year="2019">2019</button>
+      <button class="year-btn" data-year="2020">2020</button>
+      <button class="year-btn" data-year="2021">2021</button>
+      <button class="year-btn" data-year="2022">2022</button>
+      <button class="year-btn" data-year="2023">2023</button>
+      <button class="year-btn" data-year="2024">2024</button>
+      <button class="year-btn" data-year="2025">2025</button>
+      <button class="year-btn" data-year="2026">2026</button>
+    </section>
+
+    <section class="chart-panel">
+      <div class="panel-head">
+        <h2>Price trend <span class="mono muted" id="rangeLabel"></span></h2>
+        <label class="brent-toggle">
+          <input type="checkbox" id="brentToggle"> Overlay Brent crude (USD/bbl, monthly)
+        </label>
+      </div>
+      <div class="chart-holder">
+        <canvas id="priceChart" height="110"></canvas>
+      </div>
+      <p class="chart-hint">Markers below the chart flag weeks with a statistically significant price move. Click one to see what was happening.</p>
+    </section>
+
+    <section class="events-panel">
+      <div class="panel-head">
+        <h2>Notable price moves</h2>
+        <div class="direction-toggle" role="group" aria-label="Filter by price direction">
+          <button class="dir-btn active" data-dir="all" role="button" aria-pressed="true">All</button>
+          <button class="dir-btn" data-dir="rise" role="button" aria-pressed="false">Rises ↑</button>
+          <button class="dir-btn" data-dir="fall" role="button" aria-pressed="false">Falls ↓</button>
+        </div>
+      </div>
+      <button class="expand-events-btn" id="expandEventsBtn">Show all moves</button>
+      <div class="events-list" id="eventsList"></div>
+    </section>
+
+    <section class="summary-panel" id="summaryPanel">
+      <h2>Summary</h2>
+      <p id="summaryText" class="mono-body">Loading analysis…</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Fuel price data: <a href="https://www.gov.uk/government/statistics/weekly-road-fuel-prices" target="_blank" rel="noopener">gov.uk weekly road fuel prices</a>. Crude benchmark: <a href="https://fred.stlouisfed.org/series/WCOILBRENTEU" target="_blank" rel="noopener">FRED / EIA, Brent–Europe</a>. Event research cited inline. Built as a portfolio project — not financial advice.</p>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
